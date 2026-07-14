@@ -1,0 +1,15 @@
+# Harness-generated state (do not ship with the template)
+.claude/scheduled_tasks.lock
+
+# Per-project working artifacts; the template guide says to gitignore these
+# in shared repos. Tracked here would only be examples, so excluded.
+plans/
+notes/
+
+# Memory contents can hold personal or project-private facts.
+# The index stays tracked because CLAUDE.md imports it.
+memory/*
+!memory/MEMORY.md
+
+# macOS junk
+.DS_Store

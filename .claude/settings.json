@@ -1,0 +1,17 @@
+{
+  "effortLevel": "xhigh",
+  "alwaysThinkingEnabled": true,
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "INPUT=$(cat); case \"$INPUT\" in *git*commit*|*git*push*) printf '{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"additionalContext\":\"Hard gate: before this commit/push, confirm checklists/before-committing.md: the user asked for it, you are not on the default branch (branch first if so), the diff was reviewed line by line, staging is deliberate, no secrets or debug residue, and the message says why.\"}}' ;; esac; exit 0"
+          }
+        ]
+      }
+    ]
+  }
+}
