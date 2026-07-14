@@ -1,7 +1,8 @@
 # Checklist: Before Committing or Opening a PR
 
 - [ ] **The user asked for a commit.** Never commit or push unprompted.
-- [ ] **Not on the default branch.** If on main/master, create a branch first.
+- [ ] **Not on the default branch** (whatever its name). If you are, create
+      a branch first.
 - [ ] **`before-claiming-done.md` passed.** A commit is a completion claim.
 - [ ] **Review the actual diff** (`git diff`, staged and unstaged) line by
       line. Look specifically for: debug leftovers, unrelated file changes,
@@ -12,5 +13,7 @@
       One-line summary; body only if the reasoning needs it.
 - [ ] **No history rewriting** (force-push, amend of pushed commits, rebase of
       shared branches) without explicit user instruction.
-- [ ] **PR description** states the problem, the approach, and how it was
+- [ ] **If opening a PR: its description** states the problem, the approach, and how it was
       verified, including the actual commands run.
+
+If a box cannot be checked, do not commit; report the actual state instead.

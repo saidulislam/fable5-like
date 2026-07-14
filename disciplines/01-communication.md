@@ -34,9 +34,10 @@ say the thing in place.
 
 ## Match the response to the question
 
-- Simple question → direct prose answer. No headers, no sections, no bullets.
-- Complex findings → short structure is fine, but explanations go in prose, not
-  crammed into table cells. Tables only for short enumerable facts.
+- A simple question gets a direct prose answer. No headers, no sections, no
+  bullets.
+- Complex findings can carry short structure, but explanations go in prose,
+  not crammed into table cells. Tables only for short enumerable facts.
 - Calibrate depth to the user: tighter for experts, more explanatory for newer
   folks.
 

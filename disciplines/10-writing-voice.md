@@ -46,11 +46,12 @@ below.
     per project; default is on. Honor it unless a piece calls for casual
     voice and the project owner approves.)
 12. **Slop vocabulary.** Banned outright: delve, utilize, crucial, pivotal,
-    seamless, elevate, unlock, unleash, empower, foster, supercharge,
+    seamless, unleash, empower, foster, supercharge,
     game-changer, revolutionize, "a testament to", "actionable insights".
     Banned in their hype or metaphor senses only (legitimate technical
     senses allowed; judged by eye per the tier-2 scan below): leverage (as
-    a verb), robust, harness, boasts, "underscores" (as emphasis),
+    a verb), unlock, elevate, robust, harness, boasts,
+    "underscores" (as emphasis),
     "navigate" (metaphorical), "resonate".
 13. **Format reflexes.** No emoji as section markers, no bullet-pointing
     ideas that belong in a paragraph, no bolding every third phrase. Lists
@@ -101,14 +102,15 @@ Bans remove the slop; these add the life:
 This section is the CANONICAL ban list; ban summaries elsewhere (skills,
 other files) defer to it. Before delivering any prose, run tier 1 against
 the draft file (substitute its real name); do not eyeball it. If the
-current surface truly has no shell, scan the draft against the pattern by
-eye and disclose that the check was manual.
+current surface has no shell or no grep (some Windows and chat-only
+surfaces), scan the draft against the pattern by eye and disclose that the
+check was manual.
 
 Tier 1, automatic (high-precision patterns; the em dash character inside
 the pattern is the search target, not punctuation):
 
 ```
-grep -inE "—|it['’]s not just|isn['’]t just|isn['’]t about|more than just|Here['’]s the thing|In conclusion|At the end of the day|That said|ever-evolving|tapestry|delve|utilize|crucial|pivotal|seamless|elevate|unlock|unleash|supercharge|revolutionize|game-chang|testament to|actionable insight|empower|foster|in today['’]s|digital age|Let['’]s dive" <draft-file>
+grep -inE "—|it['’]s not just|isn['’]t just|isn['’]t about|more than just|Here['’]s the thing|In conclusion|At the end of the day|That said|ever-evolving|tapestry|delve|utilize|crucial|pivotal|seamless|unleash|supercharge|revolutionize|game-chang|testament to|actionable insight|empower|foster|in today['’]s|digital age|Let['’]s dive" <draft-file>
 ```
 
 Every hit gets rewritten, or kept with a one-sentence justification (rare
@@ -118,7 +120,8 @@ Tier 2, manual scan (context-dependent words that false-positive in
 technical prose, so they stay out of the grep): leverage (banned as a verb
 only), landscape, journey, foundation, realm, beacon, robust, harness,
 navigate (metaphorical), boasts, underscores (banned as emphasis only),
-resonate (banned in its emotional-appeal sense). Check each use by eye.
+resonate (banned in its emotional-appeal sense), unlock and elevate (banned
+in their hype senses). Check each use by eye.
 
 Then two more passes: (1) three consecutive same-shape sentences, (2) any
 paragraph restating a previous one. Then cut 10 to 20 percent.

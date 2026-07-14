@@ -68,9 +68,10 @@ Claude tiers vary); treat it as Sonnet-tier enforcement unless you have
 picked a top-tier model. The plumbing (verified against the GitHub and
 VS Code docs on 2026-07-14):
 
-- Entry: `.github/copilot-instructions.md` auto-loads everywhere; the root
-  AGENTS.md is read natively by the coding agent and CLI, and by VS Code
-  with `chat.useAgentsMdFile` enabled. When both exist, both are used.
+- Entry: `.github/copilot-instructions.md` auto-loads on chat and agent
+  surfaces (code completions do not read it); the root AGENTS.md is read
+  natively by the coding agent and CLI, and by VS Code with
+  `chat.useAgentsMdFile` enabled. When both exist, both are used.
 - Path-scoped triggers: `.github/instructions/*.instructions.md` with
   `applyTo` globs cover the writing and design gates by file type. The
   other gates are slash commands in `.github/prompts/` (/debug, /plan,
@@ -99,8 +100,9 @@ compute is spent. Use both.
 Claude Code (Opus / Sonnet):
 
 - `/effort <level>` in-session, or the slider in `/model`. Levels: low,
-  medium, high, xhigh, max (default high on current models). Use xhigh for
-  hard coding and agentic work; max when correctness beats cost.
+  medium, high, xhigh, max. The default varies by model (high on most
+  current models, xhigh on some). Use xhigh for hard coding and agentic
+  work; max when correctness beats cost.
 - Persist it: `"effortLevel": "xhigh"` in `.claude/settings.json` (accepts
   low/medium/high/xhigh; max is session-only), the env var
   `CLAUDE_CODE_EFFORT_LEVEL=xhigh`, or launch with `claude --effort xhigh`.

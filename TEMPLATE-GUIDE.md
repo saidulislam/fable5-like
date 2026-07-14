@@ -20,7 +20,12 @@ template repo, not your project; relicense your project as you choose)
 and any harness-generated state files (anything in `.claude/` other than
 `settings.json` and `skills/`, such as `scheduled_tasks.lock`). Claude Code
 works immediately: CLAUDE.md imports AGENTS.md and the memory index at
-session start, and the skills and hook live under `.claude/`.
+session start, and the skills and hook live under `.claude/`. Place the
+template at the repository root: in a monorepo, the `.github/` wiring and
+the root AGENTS.md auto-load apply only there, so subprojects need the
+harness's nested-instructions support or the SYSTEM-PROMPT.md paste. On
+Windows, the hook and the slop grep assume a POSIX shell (Git Bash); where
+grep is unavailable, use the manual-scan fallback in discipline 10.
 
 **Existing project: merge, do not overwrite.**
 
@@ -48,9 +53,10 @@ session start, and the skills and hook live under `.claude/`.
 **GitHub Copilot (VS Code, coding agent, code review, CLI):** the `.github/`
 folder carries the Copilot wiring, and the root AGENTS.md is read natively
 by the coding agent and CLI (in VS Code, enable the `chat.useAgentsMdFile`
-setting; VS Code also reads CLAUDE.md). Three layers:
-`.github/copilot-instructions.md` auto-loads the condensed rules on every
-Copilot surface; `.github/instructions/*.instructions.md` apply the writing
+setting; VS Code also reads CLAUDE.md behind `chat.useClaudeMdFile`).
+Three layers:
+`.github/copilot-instructions.md` auto-loads the condensed rules on
+Copilot's chat and agent surfaces (code completions do not read it); `.github/instructions/*.instructions.md` apply the writing
 and design rules by file type; `.github/prompts/*.prompt.md` expose the
 gates as slash commands in VS Code chat (/debug, /plan, /verify-done,
 /grounded, /slop-check, /quality-gate, /design-craft). Note there is no

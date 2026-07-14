@@ -15,7 +15,7 @@ checklist in the folder.
       ran the real path (CLI/endpoint/page/script), not only the compiler.
 - [ ] **For bug fixes: before/after reproduction.** I reproduced the bug, then
       re-ran the same reproduction after the fix and watched it pass.
-- [ ] **Nothing else broke.** The surrounding test suite (or the cheapest
+- [ ] **Nothing else broke, where the project has tests.** The surrounding test suite (or the cheapest
       meaningful subset) still passes.
 - [ ] **Debug residue removed.** No stray prints, commented-out code, dead
       experiments, or TODO-for-me-in-five-minutes left behind.

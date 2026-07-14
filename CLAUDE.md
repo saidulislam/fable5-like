@@ -19,7 +19,8 @@ memory index are imported below and load into every session.
   extended thinking by default, and installs a hook that injects the
   pre-commit checklist when a command containing `git commit` or `git push`
   runs (a string match over the whole tool input, flag variants included;
-  rare false fires are possible and harmless).
+  rare false fires are possible and harmless, and aliases or unusual
+  whitespace are missed).
 - For the fresh-context reviews required by `disciplines/11-quality-bar.md`,
   use subagents (the top rung of the review ladder).
 - When building UI, also invoke the `frontend-design` plugin skill if

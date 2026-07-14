@@ -14,7 +14,7 @@ for Copilot surfaces that only load this file.
    real error, one falsifiable hypothesis at a time, fix the root cause,
    re-run the reproduction. Never change things until the symptom
    disappears.
-3. Before multi-step work, write a plan to plans/<task>.md using the format
+3. Before multi-step work, write a plan to `plans/<task>.md` using the format
    in templates/plan-template.md (triggers: disciplines/05-planning.md).
 4. Cite or flag. Every specific claim is backed by something you read or
    ran this session, or is labeled "unverified, from memory". Never invent

@@ -12,4 +12,4 @@ Read disciplines/04-debugging.md and apply its loop to the problem at hand:
 6. Fix the ROOT CAUSE, not the symptom.
 7. Verify by re-running the exact reproduction, then the surrounding tests. Add a regression test that fails without the fix.
 
-Forbidden: changing things until the symptom disappears, stacking speculative changes, editing tests into passing, swallowing exceptions. After 2 to 3 failed hypotheses, write the state to notes/<topic>.md using the format from templates/investigation-notes.md (copy the format; never edit the template itself).
+Forbidden: changing things until the symptom disappears, stacking speculative changes, editing tests into passing, swallowing exceptions. After 2 to 3 failed hypotheses, write the state to `notes/<topic>.md` using the format from templates/investigation-notes.md (copy the format; never edit the template itself).
