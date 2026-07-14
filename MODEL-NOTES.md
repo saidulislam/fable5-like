@@ -6,16 +6,16 @@ guidance as context and adopt the Watch-for items as its own failure modes
 to guard against.
 
 The manual is identical for every model; what varies is enforcement
-tightness. Two things drive it: raw capability (Opus above Sonnet and
-MiniMax) and harness integration (Claude Code auto-loads the manual,
+tightness. Two things drive it: raw capability (as of this writing, Opus
+above Sonnet, MiniMax, and typical Copilot picks) and harness integration (Claude Code auto-loads the manual,
 triggers skills, and runs hooks; other harnesses may load AGENTS.md or
 nothing at all). Tighten the leash as either drops. Unknown model or
 harness: apply the strictest tier.
 
 ## Opus (Claude Code)
 
-Strongest of the three, with full harness support; the manual works nearly
-as-is.
+Strongest tier in the current lineup, with full harness support; the manual
+works nearly as-is.
 
 - Checklists can be applied with judgment; the non-negotiables remain law 1
   (evidence before assertions) and the debugging loop.
@@ -41,7 +41,7 @@ explicit gates.
 ## MiniMax, or any non-Claude harness
 
 Treat capability as Sonnet-tier until your own experience says otherwise
-(an assumption, not a measurement); the verified gap is plumbing. No auto-loaded
+(an assumption, not a measurement); the documented gap is plumbing. No auto-loaded
 manual, no skills, no hooks, and often no subagents, so every trigger must
 be supplied by the operator.
 

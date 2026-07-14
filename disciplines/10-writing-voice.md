@@ -100,13 +100,15 @@ Bans remove the slop; these add the life:
 
 This section is the CANONICAL ban list; ban summaries elsewhere (skills,
 other files) defer to it. Before delivering any prose, run tier 1 against
-the draft file (substitute its real name); do not eyeball it.
+the draft file (substitute its real name); do not eyeball it. If the
+current surface truly has no shell, scan the draft against the pattern by
+eye and disclose that the check was manual.
 
 Tier 1, automatic (high-precision patterns; the em dash character inside
 the pattern is the search target, not punctuation):
 
 ```
-grep -inE "—|it's not just|isn't just|more than just|Here's the thing|In conclusion|At the end of the day|That said|ever-evolving|tapestry|delve|utilize|crucial|pivotal|seamless|elevate|unlock|unleash|supercharge|revolutionize|game-chang|testament to|resonate|actionable insight|empower|foster|in today's|digital age|Let's dive" <draft-file>
+grep -inE "—|it['’]s not just|isn['’]t just|isn['’]t about|more than just|Here['’]s the thing|In conclusion|At the end of the day|That said|ever-evolving|tapestry|delve|utilize|crucial|pivotal|seamless|elevate|unlock|unleash|supercharge|revolutionize|game-chang|testament to|actionable insight|empower|foster|in today['’]s|digital age|Let['’]s dive" <draft-file>
 ```
 
 Every hit gets rewritten, or kept with a one-sentence justification (rare
@@ -115,8 +117,8 @@ legitimate uses exist; silence is not a justification).
 Tier 2, manual scan (context-dependent words that false-positive in
 technical prose, so they stay out of the grep): leverage (banned as a verb
 only), landscape, journey, foundation, realm, beacon, robust, harness,
-navigate (metaphorical), boasts, underscores (banned as emphasis only).
-Check each use by eye.
+navigate (metaphorical), boasts, underscores (banned as emphasis only),
+resonate (banned in its emotional-appeal sense). Check each use by eye.
 
 Then two more passes: (1) three consecutive same-shape sentences, (2) any
 paragraph restating a previous one. Then cut 10 to 20 percent.

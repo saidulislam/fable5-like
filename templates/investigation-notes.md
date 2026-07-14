@@ -16,7 +16,7 @@ that triggers it.>
 | 2 | | | |
 
 ## Boundary so far
-<Last place the data was verified correct → first place verified wrong.>
+<Last place the data was verified correct, and first place verified wrong.>
 
 ## Dead ends (do not re-test)
 <Theories eliminated, and what eliminated them.>

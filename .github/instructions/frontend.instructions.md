@@ -1,6 +1,6 @@
 ---
 description: Design craft rules for UI code
-applyTo: "**/*.tsx, **/*.jsx, **/*.vue, **/*.svelte, **/*.html, **/*.css, **/*.scss"
+applyTo: "**/*.tsx,**/*.jsx,**/*.vue,**/*.svelte,**/*.html,**/*.css,**/*.scss"
 ---
 
 When writing or editing UI code, follow disciplines/12-design-craft.md in

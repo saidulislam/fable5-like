@@ -1,8 +1,8 @@
-# Harness-generated state (do not ship with the template)
+# Harness-generated state
 .claude/scheduled_tasks.lock
 
-# Per-project working artifacts; the template guide says to gitignore these
-# in shared repos. Tracked here would only be examples, so excluded.
+# Agent working artifacts (plans and investigation notes). Remove these
+# entries if this project wants them version-controlled.
 plans/
 notes/
 

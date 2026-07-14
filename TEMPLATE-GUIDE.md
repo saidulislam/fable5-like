@@ -15,7 +15,8 @@ overwrites a project's own README.
 ## Install
 
 **New project:** copy the folder contents into the project root, skipping
-the repo's own README.md (it describes the template repo, not your project)
+the repo's own README.md and LICENSE (they describe and license the
+template repo, not your project; relicense your project as you choose)
 and any harness-generated state files (anything in `.claude/` other than
 `settings.json` and `skills/`, such as `scheduled_tasks.lock`). Claude Code
 works immediately: CLAUDE.md imports AGENTS.md and the memory index at

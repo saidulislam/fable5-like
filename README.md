@@ -9,14 +9,14 @@ loop, and operational safety.
 
 One honest sentence before anything else: files cannot transfer raw model
 capability. What they transfer is process, and process is most of the
-difference you feel day to day. This template raises the floor a lot and
-the ceiling a little.
+difference you feel day to day. In our use it raises the floor a lot and
+the ceiling a little; that is experience, not a measurement.
 
 ## What it enforces
 
 - **No unverified success claims.** "Done", "fixed", and "passing" require
   command output that proves it, gated by a checklist and, in Claude Code,
-  a commit hook.
+  a commit-hook reminder (it injects the checklist; it does not block).
 - **No hallucinated facts, no gaslighting.** Every specific claim is cited
   from something read or run this session, or labeled unverified. When
   challenged, the agent re-checks the primary source before answering.
@@ -47,8 +47,9 @@ Full install and merge instructions (existing projects, gitignore, cost
 notes): `TEMPLATE-GUIDE.md`. Per-model tuning and reasoning-depth controls:
 `MODEL-NOTES.md`.
 
-When copying the template into a project, skip this README; it describes
-the template repo, not your project. `TEMPLATE-GUIDE.md` is deliberately
+When copying the template into a project, skip this README and the LICENSE
+file; they describe and license the template repo, not your project
+(license your own project as you choose). `TEMPLATE-GUIDE.md` is deliberately
 not named README so it can travel with the copy.
 
 ## What's inside

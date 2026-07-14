@@ -45,8 +45,11 @@ The author never declares 10/10. Only a review pass can.
    > named defects is invalid, and a 10 is invalid without a statement of
    > what you checked and found clean. Do not grade on effort or
    > politeness."
-4. **Fix every material finding.** Not "acknowledge": fix. A finding you
-   disagree with gets rebutted with evidence, not silently skipped.
+4. **Fix every material finding.** Not "acknowledge": fix. A finding is
+   material if it could change what the user does or trusts: wrong
+   behavior, a missing requirement, a false or unsourced claim, a broken
+   gate. Pure style nits are minor. A finding you disagree with gets
+   rebutted with evidence, not silently skipped or waved off as immaterial.
 5. **Repeat 3-4** until a review returns no material findings, then run ONE
    more independent review to confirm (a single clean pass can be luck).
    Two consecutive clean reviews = done.
