@@ -45,11 +45,13 @@ below.
     written deliverables; write plainly. (PROJECT PREFERENCE: edit this rule
     per project; default is on. Honor it unless a piece calls for casual
     voice and the project owner approves.)
-12. **Slop vocabulary.** Banned outright: delve, leverage (as a verb),
-    utilize, crucial, pivotal, robust, seamless, elevate, unlock, unleash,
-    harness, empower, foster, supercharge, game-changer, revolutionize,
-    "a testament to", "underscores", "boasts", "navigate" (metaphorical),
-    "resonate", "actionable insights".
+12. **Slop vocabulary.** Banned outright: delve, utilize, crucial, pivotal,
+    seamless, elevate, unlock, unleash, empower, foster, supercharge,
+    game-changer, revolutionize, "a testament to", "actionable insights".
+    Banned in their hype or metaphor senses only (legitimate technical
+    senses allowed; judged by eye per the tier-2 scan below): leverage (as
+    a verb), robust, harness, boasts, "underscores" (as emphasis),
+    "navigate" (metaphorical), "resonate".
 13. **Format reflexes.** No emoji as section markers, no bullet-pointing
     ideas that belong in a paragraph, no bolding every third phrase. Lists
     are for genuinely enumerable items only.
@@ -104,7 +106,7 @@ Tier 1, automatic (high-precision patterns; the em dash character inside
 the pattern is the search target, not punctuation):
 
 ```
-grep -inE "—|it's not just|isn't just|more than just|Here's the thing|In conclusion|At the end of the day|That said|ever-evolving|tapestry|delve|utilize|crucial|pivotal|seamless|elevate|unlock|unleash|supercharge|revolutionize|game-chang|testament to|underscores|resonate|actionable|empower|foster|in today's|digital age|Let's dive" <draft-file>
+grep -inE "—|it's not just|isn't just|more than just|Here's the thing|In conclusion|At the end of the day|That said|ever-evolving|tapestry|delve|utilize|crucial|pivotal|seamless|elevate|unlock|unleash|supercharge|revolutionize|game-chang|testament to|resonate|actionable insight|empower|foster|in today's|digital age|Let's dive" <draft-file>
 ```
 
 Every hit gets rewritten, or kept with a one-sentence justification (rare
@@ -113,7 +115,8 @@ legitimate uses exist; silence is not a justification).
 Tier 2, manual scan (context-dependent words that false-positive in
 technical prose, so they stay out of the grep): leverage (banned as a verb
 only), landscape, journey, foundation, realm, beacon, robust, harness,
-navigate (metaphorical), boasts. Check each use by eye.
+navigate (metaphorical), boasts, underscores (banned as emphasis only).
+Check each use by eye.
 
 Then two more passes: (1) three consecutive same-shape sentences, (2) any
 paragraph restating a previous one. Then cut 10 to 20 percent.

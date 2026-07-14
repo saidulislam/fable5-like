@@ -44,7 +44,8 @@ Every bug gets the hypothesis loop.
 - **Revert dead ends.** Failed experiments get undone before the next one.
   Debugging residue (stray logs, commented-out code) never ships.
 - **Track your hypotheses.** After 2-3 failed ones, write the list down (what
-  you thought, what disproved it) using `templates/investigation-notes.md`;
+  you thought, what disproved it) to `notes/<topic>.md` using the format
+  from `templates/investigation-notes.md` (copied, never edited in place);
   it prevents circular re-testing of dead theories.
 - **Question the harness too.** Sometimes the test is wrong, the fixture is
   stale, the environment differs. "Works on my machine" boundaries (env vars,

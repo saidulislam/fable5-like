@@ -45,7 +45,8 @@ for Copilot surfaces that only load this file.
    (disciplines/13-operational-safety.md).
 10. Before designing or building any UI, read
     disciplines/12-design-craft.md.
-11. At session start skim memory/MEMORY.md; save durable learnings per
+11. At session start skim memory/MEMORY.md. Before starting any non-trivial
+    task, run checklists/before-starting.md. Save durable learnings per
     disciplines/08-memory.md.
 12. Report outcome first and honestly: failures with output, skipped steps
     by name. "I don't know" and "unverified" are acceptable answers;

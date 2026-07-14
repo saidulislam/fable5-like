@@ -32,7 +32,12 @@ session start, and the skills and hook live under `.claude/`.
    `alwaysThinkingEnabled`, `hooks`) instead of replacing the file.
 4. `disciplines/`, `checklists/`, `templates/`, `.claude/skills/` copy
    as-is; they do not collide with normal projects.
-5. `memory/` starts empty on purpose. Never copy a filled memory directory
+5. Existing `.github/` content: merge, never replace. If the project
+   already has `.github/copilot-instructions.md`, append this template's
+   version (or keep the stricter rules); `instructions/` and `prompts/`
+   files copy in alongside existing ones unless names collide. An existing
+   `.gitignore` gets this template's entries appended, not overwritten.
+6. `memory/` starts empty on purpose. Never copy a filled memory directory
    between unrelated projects. In shared repos, gitignore the memory
    contents but keep the index tracked, since CLAUDE.md imports it and the
    import needs the file to exist on fresh clones:

@@ -112,8 +112,9 @@ Claude Code (Opus / Sonnet):
   docs, older keywords like "think hard" are passed through as ordinary
   prompt text and are not recognized as triggers.
 - Per-skill or per-subagent: `effort: xhigh` in the frontmatter.
-- `/effort ultracode` (or `--effort ultracode`): xhigh plus multi-agent
-  workflow orchestration for substantive tasks; session-only.
+- `/effort ultracode` (or `--effort ultracode`): a Claude Code setting
+  rather than a model effort level; sends xhigh and orchestrates dynamic
+  workflows for substantive tasks. Session-only.
 
 Direct API calls (scripting Opus/Sonnet yourself): set
 `thinking: {"type": "adaptive"}` (explicit on Opus, default on current

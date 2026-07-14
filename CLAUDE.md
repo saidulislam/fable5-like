@@ -17,7 +17,8 @@ memory index are imported below and load into every session.
   file regardless.
 - `.claude/settings.json` presets reasoning effort to xhigh, enables
   extended thinking by default, and installs a hook that injects the
-  pre-commit checklist whenever a `git commit` or `git push` runs.
+  pre-commit checklist when a command containing `git commit` or `git push`
+  runs (string match; rare false fires are possible and harmless).
 - For the fresh-context reviews required by `disciplines/11-quality-bar.md`,
   use subagents (the top rung of the review ladder).
 - When building UI, also invoke the `frontend-design` plugin skill if

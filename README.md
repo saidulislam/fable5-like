@@ -67,9 +67,11 @@ not named README so it can travel with the copy.
 
 Only a project's own test suite runs without the model's cooperation;
 everything else here is instruction-backed, and weaker models can drift
-from instructions. The template was built and adversarially reviewed with
-its own quality loop (three review rounds; the certified score of the
-process is documented in the loop's own terms), and `MODEL-NOTES.md` is
+from instructions. The template was built with its own quality loop:
+fresh-context adversarial reviews with named defects, fixed after each
+round, scored by the rules in `disciplines/11-quality-bar.md`. It has never
+carried a self-declared score, because its own rules forbid that.
+`MODEL-NOTES.md` is
 explicit about which model tiers need which enforcement and where to spend
 your own review attention. If an agent follows only one file, make it
 `checklists/before-claiming-done.md`: the unverified success claim is the
