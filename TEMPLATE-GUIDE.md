@@ -15,7 +15,8 @@ overwrites a project's own README.
 ## Install
 
 **New project:** copy the folder contents into the project root, skipping
-any harness-generated state files (anything in `.claude/` other than
+the repo's own README.md (it describes the template repo, not your project)
+and any harness-generated state files (anything in `.claude/` other than
 `settings.json` and `skills/`, such as `scheduled_tasks.lock`). Claude Code
 works immediately: CLAUDE.md imports AGENTS.md and the memory index at
 session start, and the skills and hook live under `.claude/`.
